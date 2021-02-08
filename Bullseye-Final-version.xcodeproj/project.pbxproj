@@ -21,6 +21,7 @@
 		4715730D25D1BBF3009B712E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4715730825D1BBF3009B712E /* AppDelegate.swift */; };
 		4715730F25D1BBF3009B712E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4715730A25D1BBF3009B712E /* SceneDelegate.swift */; };
 		4715731A25D1BC1A009B712E /* Bullseye_Final_versionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4715731925D1BC1A009B712E /* Bullseye_Final_versionTests.swift */; };
+		4715732625D1BCDB009B712E /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4715732525D1BCDB009B712E /* LeaderboardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		4715731725D1BC1A009B712E /* Bullseye-Final-versionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bullseye-Final-versionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4715731925D1BC1A009B712E /* Bullseye_Final_versionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bullseye_Final_versionTests.swift; sourceTree = "<group>"; };
 		4715731B25D1BC1A009B712E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4715732525D1BCDB009B712E /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				4715730425D1BBF3009B712E /* App */,
-				471572FE25D1BBD9009B712E /* Models */,
 				471572F025D1BBD3009B712E /* Views */,
+				471572FE25D1BBD9009B712E /* Models */,
 				471572E325D1BBC3009B712E /* Preview Content */,
 			);
 			path = "Bullseye-Final-version";
@@ -114,6 +116,7 @@
 			children = (
 				471572F125D1BBD3009B712E /* TextViews.swift */,
 				471572F225D1BBD3009B712E /* BackgroundView.swift */,
+				4715732525D1BCDB009B712E /* LeaderboardView.swift */,
 				471572F325D1BBD3009B712E /* RoundViews.swift */,
 				471572F425D1BBD3009B712E /* Shapes.swift */,
 				471572F525D1BBD3009B712E /* ContentView.swift */,
@@ -254,6 +257,7 @@
 			files = (
 				4715730D25D1BBF3009B712E /* AppDelegate.swift in Sources */,
 				4715730225D1BBD9009B712E /* Models.swift in Sources */,
+				4715732625D1BCDB009B712E /* LeaderboardView.swift in Sources */,
 				471572FA25D1BBD3009B712E /* Shapes.swift in Sources */,
 				4715730125D1BBD9009B712E /* Game.swift in Sources */,
 				471572F825D1BBD3009B712E /* BackgroundView.swift in Sources */,
@@ -420,7 +424,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Bullseye-Final-version/Preview Content\"";
 				DEVELOPMENT_TEAM = Q5Y5DR73B2;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Bullseye-Final-version/Info.plist";
+				INFOPLIST_FILE = "Bullseye-Final-version/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -441,7 +445,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Bullseye-Final-version/Preview Content\"";
 				DEVELOPMENT_TEAM = Q5Y5DR73B2;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Bullseye-Final-version/Info.plist";
+				INFOPLIST_FILE = "Bullseye-Final-version/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

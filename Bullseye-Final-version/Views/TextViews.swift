@@ -86,6 +86,18 @@ struct ButtonText: View {
   }
 }
 
+struct Board: View {
+  var text: String
+  
+  var body: some View {
+    
+    Rectangle()
+      .strokeBorder(Color("BackgroundColor"), lineWidth: 2.0)
+      .frame(maxWidth: .infinity, maxHeight: 100)
+      .cornerRadius(12)
+  }
+}
+
 struct TextView_Previews: PreviewProvider {
   static var previews: some View {
     VStack {
@@ -95,6 +107,7 @@ struct TextView_Previews: PreviewProvider {
       LabelText(text: "80")
       BodyText(text: "You scored 200 points\n🎉🎉🎉")
       ButtonText(text: "Start New Round")
+      Board(text: "numbers")
     }
     .padding()
   }
