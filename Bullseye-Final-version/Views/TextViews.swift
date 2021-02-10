@@ -86,15 +86,39 @@ struct ButtonText: View {
   }
 }
 
-struct Board: View {
+struct LeaderboardText: View {
+  var text: String
+  var body: some View {
+    Text(text.uppercased())
+      .kerning(2.0)
+      .bold()
+      .font(.title2)
+  }
+}
+
+struct ScoreText: View {
   var text: String
   
   var body: some View {
-    
-    Rectangle()
-      .strokeBorder(Color("BackgroundColor"), lineWidth: 2.0)
-      .frame(maxWidth: .infinity, maxHeight: 100)
-      .cornerRadius(12)
+    Text(text)
+      .kerning(1.5)
+      .bold()
+      .font(.title2)
+      .multilineTextAlignment(.center)
+      .lineSpacing(14)
+  }
+}
+
+struct DateText: View {
+  var date: Date
+  
+  var body: some View {
+    Text(date, style: .time)
+      .kerning(1.5)
+      .bold()
+      .font(.title2)
+      .multilineTextAlignment(.center)
+      .lineSpacing(14)
   }
 }
 
@@ -107,7 +131,9 @@ struct TextView_Previews: PreviewProvider {
       LabelText(text: "80")
       BodyText(text: "You scored 200 points\n🎉🎉🎉")
       ButtonText(text: "Start New Round")
-      Board(text: "numbers")
+      LeaderboardText(text: "Leaderboard")
+      ScoreText(text: "123")
+      DateText(date: Date())
     }
     .padding()
   }

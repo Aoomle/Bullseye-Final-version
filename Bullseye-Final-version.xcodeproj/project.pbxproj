@@ -22,6 +22,7 @@
 		4715730F25D1BBF3009B712E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4715730A25D1BBF3009B712E /* SceneDelegate.swift */; };
 		4715731A25D1BC1A009B712E /* Bullseye_Final_versionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4715731925D1BC1A009B712E /* Bullseye_Final_versionTests.swift */; };
 		4715732625D1BCDB009B712E /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4715732525D1BCDB009B712E /* LeaderboardView.swift */; };
+		476656E425D25CB100619641 /* BackgroundLeaderBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476656E325D25CB100619641 /* BackgroundLeaderBoard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		4715731925D1BC1A009B712E /* Bullseye_Final_versionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bullseye_Final_versionTests.swift; sourceTree = "<group>"; };
 		4715731B25D1BC1A009B712E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4715732525D1BCDB009B712E /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
+		476656E325D25CB100619641 /* BackgroundLeaderBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundLeaderBoard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			children = (
 				471572F125D1BBD3009B712E /* TextViews.swift */,
 				471572F225D1BBD3009B712E /* BackgroundView.swift */,
+				476656E325D25CB100619641 /* BackgroundLeaderBoard.swift */,
 				4715732525D1BCDB009B712E /* LeaderboardView.swift */,
 				471572F325D1BBD3009B712E /* RoundViews.swift */,
 				471572F425D1BBD3009B712E /* Shapes.swift */,
@@ -262,6 +265,7 @@
 				4715730125D1BBD9009B712E /* Game.swift in Sources */,
 				471572F825D1BBD3009B712E /* BackgroundView.swift in Sources */,
 				471572FB25D1BBD3009B712E /* ContentView.swift in Sources */,
+				476656E425D25CB100619641 /* BackgroundLeaderBoard.swift in Sources */,
 				471572F725D1BBD3009B712E /* TextViews.swift in Sources */,
 				4715730F25D1BBF3009B712E /* SceneDelegate.swift in Sources */,
 				471572FC25D1BBD3009B712E /* PointViews.swift in Sources */,
