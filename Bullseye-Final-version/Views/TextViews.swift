@@ -101,11 +101,10 @@ struct ScoreText: View {
   
   var body: some View {
     Text(text)
-      .kerning(1.5)
+      .kerning(-0.2)
       .bold()
-      .font(.title2)
-      .multilineTextAlignment(.center)
-      .lineSpacing(14)
+      .font(.title3)
+      .foregroundColor(Color("TextColor"))
   }
 }
 
@@ -114,11 +113,10 @@ struct DateText: View {
   
   var body: some View {
     Text(date, style: .time)
-      .kerning(1.5)
+      .kerning(-0.2)
       .bold()
-      .font(.title2)
-      .multilineTextAlignment(.center)
-      .lineSpacing(14)
+      .font(.title3)
+      .foregroundColor(Color("TextColor"))
   }
 }
 

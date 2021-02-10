@@ -21,16 +21,19 @@ struct RowView: View {
   var body: some View {
     HStack {
       RoundedTextView(text: "\(index)")
+      Spacer()
       ScoreText(text: "\(score)")
         .frame(width: Constants.Leaderboard.leaderboardScoreColWidth)
+      Spacer()
       DateText(date: date)
         .frame(width: Constants.Leaderboard.leaderboardDateColWidth)
         .padding()
     }.background(
       RoundedRectangle(cornerRadius: .infinity)
         .strokeBorder(Color("LeaderboardRowColor"), lineWidth: Constants.General.strokeWidth)
-    ).padding([.leading, .trailing])
-    .frame(width: Constants.Leaderboard.leaderboardMaxRowWidth)
+    ).padding(.leading)
+    .padding(.trailing)
+    .frame(maxWidth: Constants.Leaderboard.leaderboardMaxRowWidth)
   }
 }
 
