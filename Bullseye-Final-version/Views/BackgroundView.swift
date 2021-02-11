@@ -10,31 +10,40 @@ import SwiftUI
 struct BackgroundView: View {
   @Binding var game: Game
   
-    var body: some View {
-      VStack {
-        TopView(game: $game)
-        Spacer()
-        BottomView(game: $game)
-      }
-      .padding()
-      RingsCircle()
+  var body: some View {
+    VStack {
+      TopView(game: $game)
+      Spacer()
+      BottomView(game: $game)
     }
+    .padding()
+    RingsCircle()
+  }
 }
 
 struct TopView: View {
+  
+  @State var leaderboardIsShowing = false
+  
   @Binding var game: Game
   
-    var body: some View {
-      HStack {
-        Button(action:{
-          game.restartGame()
-        }){
-          RoundedImageViewStroked(systemName: "arrow.counterclockwise")
-        }
-        Spacer()
-        RoundedImageViewFilled(systemName: "list.dash")
+  var body: some View {
+    HStack {
+      Button(action:{
+        game.restartGame()
+      }){
+        RoundedImageViewStroked(systemName: "arrow.counterclockwise")
       }
+      Spacer()
+      Button(action: {
+        leaderboardIsShowing = true
+      }) {
+        RoundedImageViewFilled(systemName: "list.dash")
+      }.sheet(isPresented: $leaderboardIsShowing, onDismiss: {}, content: {
+        LeaderboardView(leaderboardIsShowing: $leaderboardIsShowing)
+      })
     }
+  }
 }
 
 struct NumberView: View {
@@ -52,13 +61,13 @@ struct NumberView: View {
 struct BottomView: View {
   @Binding var game: Game
   
-    var body: some View {
-      HStack {
-        NumberView(title: "Score", text: "\(game.score)")
-        Spacer()
-        NumberView(title: "Round", text: "\(game.round)")
-      }
+  var body: some View {
+    HStack {
+      NumberView(title: "Score", text: "\(game.score)")
+      Spacer()
+      NumberView(title: "Round", text: "\(game.round)")
     }
+  }
 }
 
 struct RingsCircle: View {
@@ -76,7 +85,7 @@ struct RingsCircle: View {
           .stroke(lineWidth: 20.0)
           .fill(
             RadialGradient(gradient: Gradient(colors: [Color("RingsColor").opacity(opacity), Color("RingsColor").opacity(0)]), center: .center, startRadius: 100, endRadius: 300)
-              )
+          )
           .frame(width: size, height: size)
       }
     }
@@ -84,7 +93,7 @@ struct RingsCircle: View {
 }
 
 struct BackgroundView_Previews: PreviewProvider {
-    static var previews: some View {
-      BackgroundView(game: .constant(Game()))
-    }
+  static var previews: some View {
+    BackgroundView(game: .constant(Game()))
+  }
 }
