@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct PointViews: View {
-  @Binding var alertIsVisble: Bool
+struct PointsView: View {
+  @Binding var alertIsVisible: Bool
   @Binding var sliderValue: Double
   @Binding var game: Game
   
@@ -22,7 +22,7 @@ struct PointViews: View {
       BodyText(text: "You scored \(points) points\n 🎉🎉🎉")
       Button(action: {
         withAnimation {
-          alertIsVisble = false
+          alertIsVisible = false
           game.startNewRound(points: points)
         }
       }) {
@@ -40,6 +40,6 @@ struct PointViews: View {
 
 struct PointViews_Previews: PreviewProvider {
   static var previews: some View {
-    PointViews(alertIsVisble: .constant(true), sliderValue: .constant(50), game: .constant(Game()))
+    PointsView(alertIsVisible: .constant(true), sliderValue: .constant(50), game: .constant(Game()))
   }
 }

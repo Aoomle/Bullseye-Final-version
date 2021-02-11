@@ -13,7 +13,7 @@
 		471572F925D1BBD3009B712E /* RoundViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471572F325D1BBD3009B712E /* RoundViews.swift */; };
 		471572FA25D1BBD3009B712E /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471572F425D1BBD3009B712E /* Shapes.swift */; };
 		471572FB25D1BBD3009B712E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471572F525D1BBD3009B712E /* ContentView.swift */; };
-		471572FC25D1BBD3009B712E /* PointViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471572F625D1BBD3009B712E /* PointViews.swift */; };
+		471572FC25D1BBD3009B712E /* PointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471572F625D1BBD3009B712E /* PointsView.swift */; };
 		4715730125D1BBD9009B712E /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471572FF25D1BBD9009B712E /* Game.swift */; };
 		4715730225D1BBD9009B712E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4715730025D1BBD9009B712E /* Constants.swift */; };
 		4715730B25D1BBF3009B712E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4715730525D1BBF3009B712E /* Assets.xcassets */; };
@@ -43,7 +43,7 @@
 		471572F325D1BBD3009B712E /* RoundViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundViews.swift; sourceTree = "<group>"; };
 		471572F425D1BBD3009B712E /* Shapes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 		471572F525D1BBD3009B712E /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		471572F625D1BBD3009B712E /* PointViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointViews.swift; sourceTree = "<group>"; };
+		471572F625D1BBD3009B712E /* PointsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointsView.swift; sourceTree = "<group>"; };
 		471572FF25D1BBD9009B712E /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		4715730025D1BBD9009B712E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4715730525D1BBF3009B712E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 				471572F325D1BBD3009B712E /* RoundViews.swift */,
 				471572F425D1BBD3009B712E /* Shapes.swift */,
 				471572F525D1BBD3009B712E /* ContentView.swift */,
-				471572F625D1BBD3009B712E /* PointViews.swift */,
+				471572F625D1BBD3009B712E /* PointsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -264,7 +264,7 @@
 				471572FB25D1BBD3009B712E /* ContentView.swift in Sources */,
 				471572F725D1BBD3009B712E /* TextViews.swift in Sources */,
 				4715730F25D1BBF3009B712E /* SceneDelegate.swift in Sources */,
-				471572FC25D1BBD3009B712E /* PointViews.swift in Sources */,
+				471572FC25D1BBD3009B712E /* PointsView.swift in Sources */,
 				471572F925D1BBD3009B712E /* RoundViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
