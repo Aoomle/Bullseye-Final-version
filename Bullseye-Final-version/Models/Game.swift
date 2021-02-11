@@ -9,7 +9,7 @@ import Foundation
 
 struct LeaderboardEntry {
   let score: Int
-  let date: Int
+  let date: Date
 }
 
 struct Game {
@@ -17,6 +17,7 @@ struct Game {
   var score = 0
   var round = 1
   var leaderboardEntries = [LeaderboardEntry]()
+  
   func points(sliderValue: Int) -> Int {
     let difference = sliderValue > target ? sliderValue - target : target - sliderValue
     
@@ -33,10 +34,16 @@ struct Game {
     return 100 - difference + bonus
   }
   
+  mutating func addToLeaderboard(point: Int) {
+    leaderboardEntries.append(LeaderboardEntry(score: point, date: Date()))
+    leaderboardEntries.sort {$0.score < $1.score}
+  }
+  
   mutating func startNewRound(points: Int){
     score += points
     round += 1
     target = Int.random(in: 1...100)
+    addToLeaderboard(point: points)
   }
   
   mutating func restartGame() {
