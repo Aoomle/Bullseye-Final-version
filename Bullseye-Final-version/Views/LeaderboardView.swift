@@ -42,9 +42,20 @@ struct RowView: View {
 }
 
 struct HeaderView: View {
+  @Environment (\.verticalSizeClass) var verticalSizeClass
+  @Environment (\.horizontalSizeClass) var horizontalSizeClass
+  
   var body: some View {
     ZStack {
-      BigBoldText(text: "leaderboard")
+      HStack {
+        if verticalSizeClass == .regular &&  horizontalSizeClass == .compact {
+          BigBoldText(text: "leaderboard")
+            .padding(.leading)
+          Spacer()
+        } else {
+          BigBoldText(text: "leaderboard")
+        }
+      }
       HStack {
         Spacer()
         Button(action: {}) {
