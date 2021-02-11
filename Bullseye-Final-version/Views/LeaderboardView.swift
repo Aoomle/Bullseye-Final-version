@@ -77,6 +77,7 @@ struct HeaderView: View {
             .padding(.trailing)
         }
       }
+      .padding(.top)
     }
   }
 }
